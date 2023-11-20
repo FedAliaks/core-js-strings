@@ -193,8 +193,8 @@ function sumOfCodes(/* str */) {
  *   startsWith('Hello World', 'World') => false
  *   startsWith('Hello World', 'Hello') => true
  */
-function startsWith(/* str, substr */) {
-  throw new Error('Not implemented');
+function startsWith(str, substr) {
+  return str.startsWith(substr);
 }
 
 /**
@@ -208,8 +208,8 @@ function startsWith(/* str, substr */) {
  *   endsWith('Hello World', 'World') => true
  *   endsWith('Hello World', 'Hello') => false
  */
-function endsWith(/* str, substr */) {
-  throw new Error('Not implemented');
+function endsWith(str, substr) {
+  return str.endsWith(substr);
 }
 
 /**
@@ -240,7 +240,7 @@ function formatTime(/* minutes, seconds */) {
  *   reverseString('12345') => '54321'
  */
 function reverseString(str) {
-  return str.reverse();
+  return str.split('').reverse().join('');
 }
 
 /**
@@ -254,8 +254,8 @@ function reverseString(str) {
  *   orderAlphabetically('textbook') => 'bekoottx'
  *   orderAlphabetically('abc123xyz') => '123abcxyz'
  */
-function orderAlphabetically(str) {
-  return str.sort((a, b) => b - a);
+function orderAlphabetically(/* str */) {
+  throw new Error('Not implemented');
 }
 
 /**
@@ -311,8 +311,8 @@ function countVowels(str) {
  *   isPalindrome('apple') => false
  *   isPalindrome('No lemon, no melon') => true
  */
-function isPalindrome(str) {
-  return str.toLowerCase() === str.split('').reverse().join('').toLowerCase();
+function isPalindrome(/* str */) {
+  throw new Error('Not implemented');
 }
 
 /**
